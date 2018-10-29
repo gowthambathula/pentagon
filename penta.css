@@ -1,0 +1,78 @@
+svg#penta .s1:hover {
+  fill: blue;
+  transform: scale(1.04);
+}
+
+svg.pentagon:hover .layer {
+  transform: translate(-200px);
+}
+svg#penta {
+  transition: 3s;
+}
+
+/*
+<style type="text/css" > .picker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+*/
+#display {
+  width: 100%;
+  height: 100%;
+  background: rgb(115, 10, 160);
+  transition: background 100ms;
+  margin-top: 30px;
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+.foo {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.voilet {
+  background: #9400d3;
+}
+
+.indigo {
+  background: #4b0082;
+}
+
+.Blue {
+  background: #0000ff;
+}
+.Green {
+  background: #00ff00;
+}
+.Yellow {
+  background: #ffff00;
+}
+.Orange {
+  background: #ff7f00;
+}
+.Red {
+  background: #ff0000;
+}
+#displa {
+  float: right;
+  position: absolute;
+  top: 40px;
+  left: 0cm;
+  width: 100px;
+  height: 100px;
+}
+.element {
+  display: flex;
+}

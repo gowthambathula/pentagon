@@ -1,2 +1,0 @@
-# pentagon
-Created with CodeSandbox

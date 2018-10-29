@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script type="text/javascript">
+	</script>
+
+	<style type="text/css">
+		.picker {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: auto;
+			height: auto;
+
+		}
+
+		#display {
+			width: 100%;
+			height: 100%;
+			background: rgb(115, 10, 160);
+			transition: background 100ms;
+			margin-top: 30px;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="picker">
+		red<input type="range" min="0" max="225" step="1" id="red" value="115">
+        green<input type="range" min="0" max="225" step="1" id="green" value="10">
+        blue<input type="range" min="0" max="225" step="1" id="blue" value="160">
+        <div id="display">
+
+        </div>
+        
+    </div>
+    <script type="text/javascript">
+    var input = document.querySelectorAll("input");
+
+    for(var i=0;i<input.length;i++){
+        input[i].addEventListener("input",function(){
+            var red=document.getElementById("red").value;
+            var green=document.getElementById("green").value;
+            var blue=document.getElementById("blue").value;
+
+            var display= document.getElementById("display");
+            display.style.background="rgb("+red+","+green+","+blue+")";
+        })
+    }
+
+    </script>
+    
+</body>
+</html>
